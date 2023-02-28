@@ -1,0 +1,17 @@
+<%- include("partials/header") -%>
+<div class="container">
+    <h1>Compose</h1>
+    <form action="/compose" method="POST">
+        <label class="form-label">Title</label>
+        <div class="input-group mb-3">
+            <input type="text" name="postTitle" class="form-control w-auto" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+          <label class="form-label">Post</label>
+          <div class="form-floating">
+            <textarea class="form-control" name="postBody" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Comments</label>
+          </div>
+          <button type="submit" class="btn btn-success mx-0 my-3">Publish</button>
+    </form>  
+</div>      
+<%- include("partials/footer") -%>

@@ -1,0 +1,16 @@
+<%- include("partials/header") -%>
+      <div class="container">
+        <h1>Home</h1>
+        <p>
+            <%= homeStartingContent %>
+          </p>
+
+        <%  for(let i=0 ;i<newPosts.length;i++){ %>
+            <div class="post">
+                <p class="Titlemark fs-2 fw-bold"><%= newPosts[i].title %></p>
+                <p class="Contentmark fs-5"><%= newPosts[i].content %></p>
+            </div>
+            
+          <% } %>
+      </div>     
+<%- include("partials/footer") -%>
